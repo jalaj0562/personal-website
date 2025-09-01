@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="text-center py-5" data-aos="fade-up">
+  <img src="{{ url_for('static', filename='images/profile.jpg') }}" class="rounded-circle shadow-lg" width="180" height="180">
+  <h1 class="fw-bold mt-3">Hi, I'm <span class="text-warning">Jalaj Hingorani</span></h1>
+  <p class="lead mt-3">
+    Welcome to my digital home! I’m a passionate Computer Science and Data Science undergraduate at Christ University. 
+    I love crafting AI-powered solutions, building responsive web apps with Flask, and visualizing data in meaningful ways.
+  </p>
+  <p>
+    Here, you'll find a mix of projects ranging from ML-driven dashboards to NLP tools and production-ready web applications. 
+    Dive in to discover how I combine technology with creativity to build projects that solve real-world problems.
+  </p>
+  <div class="mt-4">
+    <a href="{{ url_for('route_about') }}" class="btn btn-primary btn-lg mx-2">About Me</a>
+    <a href="{{ url_for('route_services') }}" class="btn btn-outline-light btn-lg mx-2">Projects</a>
+    <a href="{{ url_for('download_resume') }}" class="btn btn-success btn-lg mx-2">Download Resume</a>
+  </div>
+</div>
+{% endblock %}
